@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+    mix-blend-mode: difference;
+}
+
+.jumbotron {
+  background-image:
+          url("data:/Users/jimolivi/CodingProjects/OldGuyProgrammer/images/landing_page_background.jpg")
+          no-repeat center center fixed;
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*background-size: cover;*/
+  /*-o-background-size: cover;*/
+  height: 50%
+}
