@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "doldguy_backend": {
+      "main": "src/doldguy_backend/main.mo",
+      "type": "motoko"
+    },
+    "doldguy_frontend": {
+      "dependencies": [
+        "doldguy_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/doldguy_frontend/src/index.html"
+      },
+      "source": [
+        "src/doldguy_frontend/assets",
+        "dist/doldguy_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
