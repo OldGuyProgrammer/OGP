@@ -1,24 +1,32 @@
 import React from 'react';
-import { AppBar, Toolbar } from '@mui/material';
-import { Link } from 'react-router-dom';
-import Typography from '@mui/material/Typography';
+import { Link } from "react-router-dom";
 
 export default function MainMenuBar() {
 	return (
-		<AppBar position='static'>
-			<Toolbar className='toolBar'>
-				<img
-					style={{ width: '5%' }}
-					src='default.png'
-					alt='OGP Logo'
-				/>
-				<Typography component='div' sx={{ flexGrow: 1 }}>
-					<h2 className='text-start'>Old Guy Programmer</h2>
-				</Typography>
-				<Link to={'Contact'} className='navbutton'>
-					Contact Us
-				</Link>
-			</Toolbar>
-		</AppBar>
+		<div>
+			<nav className="navbar navbar-expand-lg navbar-light ogp-nav-bar">
+				<img className="logo-img" src="default.png" alt="OGP Logo" />
+				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div className="collapse navbar-collapse" id="navbarNav">
+					<ul className="navbar-nav">
+						<li className="nav-item active">
+							<Link className="nav-link" to="/">Home <span className="sr-only">(current)</span>
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/contactus">Contact Us <span className="sr-only">(current)</span>
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/messages">Get Messages <span className="sr-only">(current)</span>
+							</Link>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	);
 }
+

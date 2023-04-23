@@ -29,7 +29,7 @@
     "terser-webpack-plugin": "^5.3.3",
     "ts-loader": "^9.4.2",
     "util": "0.12.4",
-    "webpack": "^5.73.0",
+    "webpack": "^5.76.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.8.1"
   },
@@ -43,19 +43,13 @@
     "last 2 edge version"
   ],
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.12",
     "add": "^2.0.6",
-    "bootstrap": "^5.2.3",
     "latest": "^0.2.0",
     "npm": "^9.6.2",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
-    "react-devtools": "^4.27.3",
+    "react-devtools": "^2.1.7",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
-    "react-scripts": "^5.0.1",
-    "sass": "^1.59.3"
+    "react-scripts": "^2.1.3"
   }
 }

@@ -1,76 +1,78 @@
 import * as React from 'react';
-import Card from 'react-bootstrap/Card';
-import Figure from 'react-bootstrap/Figure';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import AboutMenuBar from '../components/AboutMenuBar';
+import Footer from './Footer/Footer';
+// import AboutMenuBar from '../components/AboutMenuBar';
 
 export default function About() {
 	return (
-		<div className="clearfix">
-			{/* <AboutMenuBar /> */}
-			<Row className="align-items-center pt-5">
-				<Col>
-					<Figure className="text-center">
-						<Figure.Image style={{ width: "40%" }} src="Jim_Olivi.jpeg" alt="Jim Olivi" />
-					</Figure >
-				</Col>
-				<Col className="text-left">
-					<h3>
-						Programming Experience Professional Integrity
-					</h3>
-				</Col>
-				<Col className="text-right">
-					<h3>
-						Complete System Design, Implementation
-					</h3>
-				</Col>
-				<Col>
-					<Figure className="text-center">
-						<Figure.Image style={{ width: "50%" }} src="istockphoto-1147195672-612x612.jpg" alt="Intent Programmer" />
-					</Figure>
-				</Col>
-			</Row>
-			<Row className="align-items-center pt-5">
-				<Col className="text-center">
+		<div>
+			{/* Programmer picture section. */}
+			<div className="row p-5 programmer-pics">
+				<div className='col-6'>
+					<div className='card border-0'>
+						<div className="oldguy-container">
+							<img className="old-guy-img" src="Jim_Olivi.jpeg" alt="Jim Olivi" />
+							<div className='bottom-text'>
+								<p>Programming Experience</p>
+								<p>Professional Integrity</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className='col-6'>
+					<div className="card border-0">
+						<div className="programmer-container">
+							<div className='text-right top-text'>
+								<p>Complete System Design</p>
+								<p>Supported Implementations</p>
+							</div>
+							<img className="programmer-img" src="istockphoto-1147195672-612x612.jpg" alt="Intent Programmer" />
+						</div>
+					</div>
+				</div>
+				{/* End Programmer picture section. */}
+			</div>
+			<div className="row p-5">
+				{/* Business Category Section */}
+				<div className="col text-center">
 					<h3>
 						Business Systems
 					</h3>
-				</Col>
-				<Col className="text-center">
+				</div>
+				<div className="col text-center">
 					<h3>
 						Web Sites
 					</h3>
-				</Col>
-			</Row>
-			<Row className="align-items-center pt-5">
-				<Col className="text-center">
-					<Figure>
-						<Figure.Image style={{ width: "100%" }} src="Group_1.png" alt="Security" />
-					</Figure >
-				</Col>
-				<Col className="text-left">
+				</div>
+			</div>
+			{/*  End Business Category Section. */}
+			<div className="row align-items-center pt-5">
+				<div className="col text-center">
+					<div>
+						<img style={{ width: "100%" }} src="Group_1.png" alt="Security" />
+					</div >
+				</div>
+				<div className="col text-left">
 					<h3>
 						React
 					</h3>
-				</Col>
-				<Col className="text-center">
+				</div>
+				<div className="col text-center">
 					<h3>
 						Python
 					</h3>
-				</Col>
-				<Col className="text-right">
+				</div>
+				<div className="col text-right">
 					<h3>
 						JavaScript
 					</h3>
-				</Col>
-				<Col>
-					<Figure className="text-center">
-						<Figure.Image style={{ width: "100%" }} src="Group_2.png" alt="Crypto" />
-					</Figure>
-				</Col>
-			</Row>
-		</div>
+				</div>
+				<div>
+					<div className="text-center">
+						<img style={{ width: "100%" }} src="Group_2.png" alt="Crypto" />
+					</div>
+				</div>
+			</div>
+			<Footer />
+		</div >
 	);
 }

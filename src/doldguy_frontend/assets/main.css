@@ -1,36 +1,84 @@
 body {
-	font-family: 'Gideon Roman', cursive;
+	font-family: 'Gideon Roman';
 }
 
-.aboutDescription {
+.aboutDescription h2 {
 	color: rgb(87, 65, 53);
-	font-size: 1.5vw;
+	font-size: 1.5em;
 	padding: 0;
 }
 
-h2 {
-	color: white;
-	font-family: 'Gideon Roman', cursive;
+h3 {
+	color: darkblue;
+	/* mix-blend-mode: difference; */
 }
 
-h3 {
-	color: rgb(87, 65, 53);
-	mix-blend-mode: difference;
+h4 {
+	text-align: right;
+	color: darkgrey;
 }
 
 .aboutBackground {
-	background-color: rgba(209, 240, 170, 10%);
 	height: 100vh;
 }
 
-.oldGuyImage {
-	display: block;
-	width: 50%;
+.bottom-text {
+	/* position: absolute; */
+	bottom:0;
 }
 
-.programmerImage {
-	display: block;
-	justify-content: right;
+.logo-img {
+	width: 10vh;
+}
+
+.ogp-nav-bar {
+	background-color: rgb(87, 65, 53);
+	padding: 0;
+}
+
+/* All anchor tags withing the navbar will bo colored white. */
+.navbar a{
+	color: white;
+	font-size: 1.5em;
+}
+
+.programmer-pics {
+	height: 33vh;
+}
+
+.programmer-img {
+	width: 100%;
+	float: right;
+}
+
+.programmer-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+}
+
+.oldguy-container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	/* grid-template-rows: auto; */
+	align-items: end;
+}
+
+.old-guy-img {
+	width: 100%;
+}
+
+.top-text {
+	grid-column: span 2;
+	font-size: 1.5em;
+	text-align: right;
+	padding-right: 10px
+}
+
+.bottom-text {
+	grid-column: span 2;
+	font-size: 1.5em;
+	padding-left: 10px;
+	bottom: 0;
 }
 
 .navbutton {
@@ -50,15 +98,6 @@ h3 {
 	width: 25%;
 }
 
-.toolBar {
-	background-color: rgb(87, 65, 53);
-}
-
-/* .background {
-	background-image: url('python_code_2.png');
-	height: 100vh;
-} */
-
 .text-block {
 	position: absolute;
 	bottom: 20px;
@@ -77,6 +116,15 @@ h3 {
 	font-family: 'Gideon Roman', cursive;
 }
 
+.contact-form {
+    display: flex;
+    width: 380px;
+}
+
+.buttons-container {
+    display: flex;
+}
+
 @media screen and (max-width: 768px) {
 	figcaption {
 		position: inherit;
@@ -85,4 +133,12 @@ h3 {
 		color: inherit;
 		font-size: inherit;
 	}
+}
+
+.message-container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	font-family: 'Garamond';
 }

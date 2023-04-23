@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Image } from 'react-bootstrap';
 import MainMenuBar from './MainMenuBar';
-import About from "./About"
+import About from "./About";
 
 export default function Header() {
 	return (
