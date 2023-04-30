@@ -43,7 +43,7 @@ h4 {
 }
 
 .programmer-pics {
-	height: 33vh;
+	/* height: 33vh; */
 }
 
 .programmer-img {
@@ -58,13 +58,12 @@ h4 {
 
 .oldguy-container {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	/* grid-template-rows: auto; */
+	grid-template-columns: .75fr 1fr 1fr;
 	align-items: end;
 }
 
 .old-guy-img {
-	width: 100%;
+	max-width: 100%;
 }
 
 .top-text {

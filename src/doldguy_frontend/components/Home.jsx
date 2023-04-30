@@ -1,12 +1,14 @@
 // Home Page Functions
 import React from 'react';
-import Header from './Header';
+import MainMenuBar from './MainMenuBar';
+import About from "./About";
 
 const Home = () => {
 	return (
 		<>
 			<div className='aboutBackground'>
-				<Header />
+				<MainMenuBar />
+				<About />
 			</div>
 		</>
 	);
